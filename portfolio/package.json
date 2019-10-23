@@ -11,6 +11,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "compile:sass" : "node-sass public/sass/main.scss public/style.css -w",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -27,5 +28,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
   }
 }

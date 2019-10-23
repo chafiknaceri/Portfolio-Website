@@ -1,0 +1,69 @@
+body {
+    font-family: "Modak" "Oswald" sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #777777;
+    padding: 2rem;
+    
+}
+
+.heading-text {
+    color: $white-color;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+}
+.main--heading {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
+    animation-name: gofromLeft;
+    animation-duration: 1s;
+
+    animation-timing-function: ease-in;
+    
+}
+
+.second--main {
+    display: block;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+    animation: fortoRight 1s ease-in ;
+    text-align: center;
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(-120DEG,
+    $color-primary-header,
+    $color-secondary-header,
+    rgba(32, 93, 155, 0.9));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+
+
+    &:hover{
+        transform: scale(1.1) translateY(-1rem);
+        text-shadow: .5rem 1rem 1rem rgba(92, 122, 153, 0.2);
+    }
+
+}
+.third-heading{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-size: 1.6rem;
+    &:not(:last-child){
+        margin-bottom: 3rem;
+    }
+}

@@ -1,55 +1,3 @@
-.header {
-  height: 90vh;
-  background-image: linear-gradient(-120DEG, rgba(2, 27, 121, 0.9), rgba(5, 118, 230, 0.9), rgba(32, 93, 155, 0.9)), url("../images/background.jpeg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
-  .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem; }
-  .header__logo {
-    height: 3.5rem; }
-  .header__header-box {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__profile-pic {
-    width: 25%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0.5rem solid white;
-    border-radius: 50%; }
-    .header__profile-pic:hover {
-      animation: rotateImage 1.5s ease-in; }
-
-.heading-text {
-  color: white;
-  text-transform: uppercase;
-  backface-visibility: hidden;
-  margin-bottom: 6rem; }
-
-.main--heading {
-  display: block;
-  font-size: 5rem;
-  font-weight: 700;
-  letter-spacing: 1rem;
-  animation-name: gofromLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-in; }
-
-.second--main {
-  display: block;
-  font-size: 2rem;
-  font-weight: 300;
-  letter-spacing: .5rem;
-  animation: fortoRight 1s ease-in;
-  text-align: center; }
-
 @keyframes gofromLeft {
   0% {
     opacity: 0;
@@ -84,6 +32,53 @@
     opacity: 1;
     transform: translateY(0); } }
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Modak" "Oswald" sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777777;
+  padding: 2rem;
+  box-sizing: border-box; }
+
+.header {
+  height: 90vh;
+  background-image: linear-gradient(-120DEG, rgba(2, 27, 121, 0.9), rgba(5, 118, 230, 0.9), rgba(32, 93, 155, 0.9)), url("../images/background.jpeg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75vh, 0% 100%); }
+  .header__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem; }
+  .header__logo {
+    height: 3.5rem; }
+  .header__header-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__profile-pic {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0.5rem solid white;
+    border-radius: 50%; }
+    .header__profile-pic:hover {
+      animation: rotateImage 1.5s ease-in; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -173,3 +168,26 @@
 .btn--animated {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.heading-text {
+  color: white;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 6rem; }
+
+.main--heading {
+  display: block;
+  font-size: 5rem;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  animation-name: gofromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-in; }
+
+.second--main {
+  display: block;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: .5rem;
+  animation: fortoRight 1s ease-in;
+  text-align: center; }
