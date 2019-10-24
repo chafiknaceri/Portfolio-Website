@@ -86,7 +86,7 @@ body {
   letter-spacing: .2rem;
   transition: all .2s; }
   .heading-secondary:hover {
-    transform: scale(1.1) translateY(-1rem);
+    transform: scale(1.1);
     text-shadow: 0.5rem 1rem 1rem rgba(92, 122, 153, 0.2); }
 
 .third-heading {
@@ -98,6 +98,9 @@ body {
   font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+
+.skill-heading-w {
+  color: white; }
 
 .u-center-text {
   text-align: center; }
@@ -215,6 +218,50 @@ body {
   background-color: white;
   color: rgba(5, 118, 230, 0.9); }
 
+.composition {
+  position: relative; }
+  .composition__photo {
+    width: 30%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    border-color: rgba(5, 118, 230, 0.9);
+    border-width: 2rem;
+    border-radius: .2rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all .3s; }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+    .composition__photo--p2 {
+      right: 0;
+      top: -2rem; }
+    .composition__photo--p3 {
+      left: 35%;
+      top: -2rem; }
+    .composition__photo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+      z-index: 20; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: .3rem;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: all .3s; }
+  .feature-box__icon {
+    font-size: 6rem;
+    margin-bottom: .5rem;
+    display: inline-block;
+    background-image: linear-gradient(-120DEG, rgba(2, 27, 121, 0.9), rgba(5, 118, 230, 0.9), rgba(32, 93, 155, 0.9));
+    -webkit-background-clip: text;
+    color: transparent; }
+  .feature-box:hover {
+    transform: translateY(-2rem) scale(1.05); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(-120DEG, rgba(2, 27, 121, 0.9), rgba(5, 118, 230, 0.9), rgba(32, 93, 155, 0.9)), url("../images/background.jpeg");
@@ -274,3 +321,12 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0;
   margin-top: -20vh; }
+
+.section-skills {
+  padding: 20rem 0;
+  background-image: linear-gradient(-120DEG, rgba(2, 27, 121, 0.9), rgba(5, 118, 230, 0.9), rgba(32, 93, 155, 0.9)), url("../images/background.jpeg");
+  background-size: cover;
+  margin-top: -11rem;
+  transform: skewY(-7deg); }
+  .section-skills > * {
+    transform: skewY(7deg); }

@@ -1,0 +1,35 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width:30%;
+        box-shadow: 0 1.5rem 4rem rgba(0,0,0, $alpha: .4);
+        border-color: $color-secondary-header ;
+        border-width: 2rem;
+        border-radius: .2rem;
+        position: absolute;
+        border-radius: 50%;
+        z-index: 10;
+        transition: all .3s;
+
+        &--p1{
+            left:0;
+            top: -2rem;
+        }
+        &--p2{
+            right:0;
+            top: -2rem;
+        }
+        &--p3{
+            left:35%;
+            top: -2rem;
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow:  0 2.5rem 4rem rgba(0,0,0, .5);
+            z-index: 20;
+        }
+
+    }
+}

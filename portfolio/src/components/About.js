@@ -1,5 +1,7 @@
 import React from 'react';
-
+import JavaScriptLogo from '../images/JavaScriptLogo.png';
+import PythonLogo from '../images/PythonLogo.png';
+import CLogo from '../images/CLogo.png';
 class About extends React.Component{
     render(){
         return(
@@ -24,7 +26,11 @@ class About extends React.Component{
                         <a href="#" className=" btn btn-text"> Go To Projects &darr; </a>
                     </div>
                     <div className="col-1-of-2">
-                        Image Collection
+                        <div className="composition">
+                            <img src={JavaScriptLogo} className="composition__photo composition__photo--p1" alt="javascript logo"/>
+                            <img src={PythonLogo} className="composition__photo composition__photo--p2" alt="python logo"/>
+                            <img src={CLogo} className="composition__photo composition__photo--p3" alt="react logo"/>
+                        </div>
                     </div>
                 </div>
 

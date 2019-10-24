@@ -50,7 +50,7 @@ body {
 
 
     &:hover{
-        transform: scale(1.1) translateY(-1rem);
+        transform: scale(1.1) ;
         text-shadow: .5rem 1rem 1rem rgba(92, 122, 153, 0.2);
     }
 
@@ -66,4 +66,7 @@ body {
     &:not(:last-child){
         margin-bottom: 3rem;
     }
+}
+.skill-heading-w{
+    color: $white-color;
 }
