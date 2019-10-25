@@ -1,0 +1,173 @@
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height:40rem;
+    
+
+    &__side {
+        
+
+        height:40rem;
+        transition: all .8s ease;
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        backface-visibility: hidden;
+        border-radius: .8rem;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+        &--front{
+            background-color: $white-color;
+        }
+        &--back{
+            
+            transform:rotateY(180deg);
+            &--1{
+                background-image: linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D);
+            }
+            &--2{
+                background-image: linear-gradient(to right, #00416a, #799f0c, #ffe000);
+            }
+            &--3{
+                background-image:  linear-gradient(to right, #11998e, #38ef7d);
+            }
+            &--4{
+                background-image:  linear-gradient(to right, #11998e, #38ef7d);
+            }
+            &--5{
+                background-image:  linear-gradient(to right, #11998e, #38ef7d);
+            }
+            &--6{
+                background-image:  linear-gradient(to right, #11998e, #38ef7d);
+            }
+        }
+    }
+
+
+    &:hover &__side--front{
+        transform: rotateY(-180deg);
+    }
+    &:hover &__side--back{
+        transform: rotateY(0);
+    }
+
+
+    // styling the front
+    &__picture{
+        background-size: cover;
+        height: 15rem;
+        background-blend-mode: screen;
+        -webkit-clip-path: polygon(0 0,100% 0 ,100% 90%,0 100%);
+        clip-path: polygon(0 0,100% 0 ,100% 90%,0 100%);
+        border-top-left-radius: .3rem;
+        border-top-right-radius: .3rem;
+
+        
+        &--1{
+            background-image: linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D) ,url('../images/insta-search-image.jpg');
+        }
+        &--2{
+            background-image: linear-gradient(to right, #00416a, #799f0c, #ffe000),url('../images/wordpopLogo.png');
+        }
+        &--3{
+            background-image:linear-gradient(to right, #11998e, #38ef7d) ,url('../images/currency-converter-image.jpg');
+        }
+        &--4{
+            background-image:linear-gradient(to right, rgba(#11998e,.7) , rgba(#38ef7d,.7)) ,url('../images/scrabble-image.jpg');
+        }
+        &--5{
+            background-image:linear-gradient(to right, rgba(#11998e,.7) , rgba(#38ef7d,.7)) ,url('../images/credit-card-validator-image.jpg');
+            background-position: center;
+        }
+        &--6{
+            background-image:linear-gradient(to right, rgba(#11998e,.7) , rgba(#38ef7d,.7)) ,url('../images/news-image.jpg');
+            background-position: center;
+        }
+    }
+    &__heading {
+        font-size: 2.8rem;
+        font-weight: 600;
+        text-align: right;
+        color: $white-color;
+        position: absolute;
+        top:8rem;
+        right:2rem;
+        width:75%;
+        
+    }
+
+    &__heading-span{
+        padding: .5rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        &--1{
+            background-image: linear-gradient(45DEG,
+            rgba(#405DE6,.8),
+            rgba(#5851DB,.8),
+            rgba(#833AB4,.8),
+            rgba(#E1306C,.8),
+            rgba(#FD1D1D,.8));
+        }
+        &--2{
+            background-image:linear-gradient(to right, #00416a, #799f0c, #ffe000);
+        }
+        &--3{
+            background-image: linear-gradient(to right, #11998e, #38ef7d);
+        }
+        &--4{
+            background-image: linear-gradient(to right, #11998e, #38ef7d);
+        }
+        &--5{
+            background-image: linear-gradient(to right, #11998e, #38ef7d);
+        }
+        &--6{
+            background-image: linear-gradient(to right, #11998e, #38ef7d);
+        }
+    }
+    &__details{
+        padding:3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin:0 auto;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+
+                &:not(:last-child){
+                    border-bottom: .1rem solid #eee ;
+                }
+            }
+        }
+    }
+
+
+    // abck styling
+    &__cta{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate((-50%,-50%));
+        width:90%;
+        text-align: center;
+        
+        
+    }
+
+    &__project-box{
+        text-align: center;
+        color:$white-color;
+        margin-bottom: 8rem;
+    }
+    &__project-title{
+        font-size: 3rem;
+    }
+    &__project-details{
+        font-size: 1.1rem;
+    }
+
+}
