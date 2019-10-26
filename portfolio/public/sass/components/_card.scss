@@ -2,13 +2,13 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
-    height:40rem;
+    height:45rem;
     
 
     &__side {
         
 
-        height:40rem;
+        height:45rem;
         transition: all .8s ease;
         position: absolute;
         top:0;
@@ -70,7 +70,7 @@
             background-image: linear-gradient(45DEG,#405DE6,#5851DB,#833AB4,#C13584,#E1306C,#FD1D1D) ,url('../images/insta-search-image.jpg');
         }
         &--2{
-            background-image: linear-gradient(to right, #00416a, #799f0c, #ffe000),url('../images/wordpopLogo.png');
+            background-image: linear-gradient(to right, #00416a, #799f0c, #ffe000),url('../images/puzzle-image.jpg');
         }
         &--3{
             background-image:linear-gradient(to right, #11998e, #38ef7d) ,url('../images/currency-converter-image.jpg');

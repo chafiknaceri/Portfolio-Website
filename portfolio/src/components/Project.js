@@ -36,6 +36,7 @@ const Project = (props) =>{
 
                     </div>
                     <a href={props.projectLink} className="btn btn--white"> View </a>
+                    
                 </div>
             </div>
         </div>

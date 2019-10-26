@@ -6,6 +6,8 @@ import Header from './Header';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
+import Popup from './Popup';
+import Footer from './Footer';
 
 class App extends React.Component{
     render(){
@@ -16,7 +18,11 @@ class App extends React.Component{
                     <About />
                     <Skills />
                     <Projects />
+                      
                     </main>
+                    <Popup />
+                    <Footer/>
+                    
                 </div>
 
            
