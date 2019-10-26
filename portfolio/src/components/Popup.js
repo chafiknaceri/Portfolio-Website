@@ -4,7 +4,7 @@ import instasearchvid from '../images/instasearchvid.mov';
 
 const Popup = () =>{
     return(
-        <div className="popup">
+        <div className="popup" id="popup">
             <div className="popup__content">
                 <div className="popup__left">
                     <video className="popup__vid" loop="loop" autoplay="autoplay" muted="muted">
@@ -13,6 +13,7 @@ const Popup = () =>{
                     </video>
                 </div>
                 <div className="popup__right">
+                    <a href="#section-projects" className="popup__close">&times;</a>
                     <h2 className="heading-secondary u-margin-bottom-small">
                         Insta Search
                     </h2>
@@ -22,6 +23,12 @@ const Popup = () =>{
                         This Web apps lets users Get any type of image they need
                         This Web apps lets users Get any type of image they need
                         This Web apps lets users Get any type of image they need
+                        This Web apps lets users Get any type of image they need
+                        This Web apps lets users Get any type of image they need
+                        This Web apps lets users Get any type of image they need
+                        This Web apps lets users Get any type of image they need
+                        This Web apps lets users Get any type of image they need
+                        
 
                     </p>
                     <a href="#" className="btn btn--blue popop__btn">Source Code</a>

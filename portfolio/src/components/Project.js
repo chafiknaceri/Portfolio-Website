@@ -35,7 +35,7 @@ const Project = (props) =>{
                         </p>
 
                     </div>
-                    <a href={props.projectLink} className="btn btn--white"> View </a>
+                    <a href="#popup" className="btn btn--white"> View </a>
                     
                 </div>
             </div>
