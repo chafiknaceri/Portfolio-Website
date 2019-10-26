@@ -8,16 +8,16 @@ class Header extends React.Component{
     render(){
         return(
             <header className="header">
-                <div className="header__logo-box">
+                {/* <div className="header__logo-box">
                     <img className ="header__logo" src={Logo} alt="my Logo" />
-                </div>
+                </div> */}
             <div className="header__header-box">
-                <img className="header__profile-pic" src={profile}/>
+                {/* <img className="header__profile-pic" src={profile}/> */}
                 <h1 className="heading-text">
                     <span className="main--heading">Chafik Naceri</span>
                     <span className="second--main">Software Developer</span>
                 </h1>
-                <a href="#chafs" className="btn btn--white btn--animated">Checkout Projects</a>
+                <a href="#section-projects" className="btn btn--white btn--animated">Checkout Projects</a>
             </div>
 
             </header>

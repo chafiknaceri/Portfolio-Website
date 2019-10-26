@@ -1,5 +1,5 @@
 .header {
-    height: 95vh;
+    height: 70vh;
     background-image: linear-gradient(-120DEG,
     $color-primary-header,
     $color-secondary-header,
@@ -8,9 +8,12 @@
     background-size: cover;
     background-position: top;
     position: relative;
-    -webkit-clip-path: polygon(0% 0%, 100% 0% , 100% 75vh, 0% 100% );
-    clip-path: polygon(0% 0%, 100% 0% , 100% 75vh, 0% 100% );
-    
+    -webkit-clip-path: polygon(0% 0%, 100% 0% , 100% 55vh, 0% 100% );
+    clip-path: polygon(0% 0%, 100% 0% , 100% 55vh, 0% 100% );
+    @include respond(phone){
+        -webkit-clip-path: polygon(0% 0%, 100% 0% , 100% 65vh, 0% 100% );
+        clip-path: polygon(0% 0%, 100% 0% , 100% 65vh, 0% 100% );
+    }
     &__logo-box{
         position: absolute;
         top: 4rem;

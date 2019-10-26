@@ -6,9 +6,26 @@
     box-sizing: inherit;
 }
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; // 1 rem = 10px
+
+
+    @include respond(tab-land){
+        font-size: 56.25%; // 1rem = 9px 9/16 56.25%
+    }
+
+    @include respond(tab-port){
+        font-size: 50%; // 1 rem = 0px
+    }
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
 }
 body {
 
     box-sizing: border-box;
+    padding: 2rem;
+    @include respond(tab-port){
+        padding: 0 0; // 1 rem = 0px
+    }
+
 }

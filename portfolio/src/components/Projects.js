@@ -24,6 +24,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--1"
+                            projectModel="#popup"
                         />
                     </div>
                     <div className="col-1-of-3">
@@ -39,6 +40,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--2"
+                            projectModel="#popup--2"
                         />
                     </div>
                     <div className="col-1-of-3">
@@ -54,6 +56,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--3"
+                            projectModel="#popup--3"
                         />
                     </div>                   
                 </div>
@@ -71,6 +74,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--4"
+                            projectModel="#popup--4"
                         />
                     </div>
                     <div className="col-1-of-3">
@@ -86,6 +90,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--5"
+                            projectModel="#popup--5"
                         />
                     </div>
                     <div className="col-1-of-3">
@@ -101,6 +106,7 @@ class Projects extends React.Component{
                             Ajaxios and React to get all the responses."
                             projectLink="#"
                             backsideClass= "card__side card__side--back card__side--back--6"
+                            projectModel="#popup--6"
                         />
                     </div>                   
                 </div>

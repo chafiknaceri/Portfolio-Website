@@ -93,6 +93,10 @@
             background-color: $color-secondary-header;
         }
     }
+    &--red{
+        background-color: orange;
+        padding: 0;
+    }
 
 
     &::after{

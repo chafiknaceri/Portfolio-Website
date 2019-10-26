@@ -1,4 +1,6 @@
-.popup {
+
+.popup , .popup--2 ,.popup--3,.popup--4,.popup--5,.popup--6{
+   
     height: 100vh;
     width: 100%;
     position: fixed;
@@ -15,29 +17,45 @@
  
 
     &__content{
+        
         @include absCenter;
         width:75%;
+        height : 50%;
         background-color: white;
         
         box-shadow: 0 2rem 4rem rgba(248, 190, 190, 0.4);
         border-radius: .5rem;
+        
         display: table;
         overflow: hidden;
         opacity: 0;
         transform: translate(-50%,-50%) scale(.25);
         transform: all .5s .2s;
+        @include respond(tab-port){
+            
+            display: relative;
+        }
     }
 
     &__left{
         width: 60%;
         display: table-cell;
         vertical-align: middle;
+        @include respond(tab-port){
+            width:100%;
+            display: block;
+        }
     }
     &__right{
         width:40%;
         display: table-cell;
         vertical-align: middle;
         padding:3rem 5rem;
+        @include respond(tab-port){
+            width:100%;
+            display: block;
+            text-align: center;
+        }
         
     }   
 
@@ -51,7 +69,8 @@
         hyphens: auto;
     }
     &__btn{
-        margin : 0 auto;
+       text-align: center;
+       z-index:10000;
     }
     &:target {
         opacity: 1;
@@ -68,7 +87,7 @@
             font-size: 2rem;
             color:#777;
             position: absolute;
-            top:2.5rem;
+            top:2rem;
             right:2.5rem;
             text-decoration: none;
             display:inline-block;

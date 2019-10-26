@@ -4,10 +4,18 @@
     $color-secondary-header,
     rgba(32, 93, 155, 0.9));
     padding: 10rem 0;
+
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
     
 
     &__logo-box{
         text-align: center;
+        margin-bottom: 8rem;
+        @include respond(tab-port){
+            margin-bottom:6rem;
+        }
     }
     &__logo{
         width: 10rem;
@@ -17,6 +25,10 @@
         border-top: .1rem solid #eee ;
         padding-top:2rem;
         display: inline-block;
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
     &__list{
         list-style: none;
@@ -48,5 +60,9 @@
         color: #eee;
         font-size: 1.6rem;
         float:right;
+        @include respond(tab-port){
+            width: 100%;
+            float: none;
+        }
     }
 }

@@ -5,9 +5,9 @@ class Footer extends React.Component{
     render(){
         return(
             <footer className="footer">
-                <div className="footer__logo-box">
+                {/* <div className="footer__logo-box">
                     <img src={Logo} alt="logo" className="footer__logo"/>
-                </div>
+                </div> */}
                 <div className="row">
                     <div className="col-1-of-2">
                         <div className="footer__navigation">
